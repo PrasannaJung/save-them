@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(253, 199, 141, 1) 11.3%,
+    rgba(249, 143, 253, 1) 100.2%
+  ); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+
+    rgba(253, 199, 141, 1) 11.3%,
+    rgba(249, 143, 253, 1) 100.2%
+  );
+  background-color: rgba(0, 0, 0, 0.56);
+  background-blend-mode: lighten;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-position: bottom bottom;
+  color: white;
+  border-radius: 2px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.borderGrad {
+  text-transform: uppercase;
+
+  border: 3px solid;
+  border-image: linear-gradient(
+      to right,
+      rgb(224, 129, 29) 11.3%,
+      rgb(218, 112, 221) 100.2%
+    )
+    1;
+  transition: all 500ms ease;
+}
+
+.borderGrad:hover {
+  border-image: linear-gradient(
+      to right,
+      rgb(218, 112, 221) 11.3%,
+      rgb(224, 129, 29) 100.2%
+    )
+    1;
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(100px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(100px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(250px);
+}
