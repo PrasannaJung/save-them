@@ -9,6 +9,9 @@ module.exports = {
       borderRadius: {
         negative: "-8px",
       },
+      gridTemplateColumns: {
+        responsive: "repeat(auto-fit,minmax(250px,1fr))",
+      },
       colors: {
         primary: "#110835",
         primaryGradientOne: "#9f8ad0",

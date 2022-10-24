@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import MainNavigation from "./MainNavigation";
 
 const Layout = props => {
@@ -6,6 +7,7 @@ const Layout = props => {
     <div className='bg-primary min-h-screen text-white'>
       <MainNavigation />
       {props.children}
+      <Footer />
     </div>
   );
 };

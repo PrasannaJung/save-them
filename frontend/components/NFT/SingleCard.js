@@ -21,7 +21,7 @@ const SingleCard = props => {
         </div>
         <div className='px-4 mt-8'>
           <button className='px-4 py-2 bg-primaryGradientOne hover:bg-violet-500 w-full transition-colors'>
-            Mint
+            {props.title}
           </button>
         </div>
       </div>

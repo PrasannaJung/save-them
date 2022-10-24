@@ -1,7 +1,17 @@
 import React from "react";
+import COLLECTION from "../components/data";
+import SingleCard from "../components/NFT/SingleCard";
 
 const CollectionsPage = () => {
-  return <div>collections</div>;
+  return (
+    <div className='min-h-[72vh]'>
+      <div className='mt-24 p-10 flex gap-10 flex-wrap'>
+        {COLLECTION.map(data => {
+          return <SingleCard title={"View"} id={data.id} price={data.price} />;
+        })}
+      </div>
+    </div>
+  );
 };
 
 export default CollectionsPage;
