@@ -1,50 +1,10 @@
 import Link from "next/link";
 import Web3Modal from "web3modal";
-import { Contract, ethers, providers, utils } from "ethers";
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 
 const MainNavigation = () => {
-  const [walletConnected, setWalletConnected] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const web3ModalRef = useRef();
   const router = useRouter();
-
-  const getProviderOrSigner = async (needSigner = false) => {
-    const provider = await web3ModalRef.current.connect();
-    const web3Provider = new providers.Web3Provider(provider);
-    const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
-      window.alert("Please change the network to the Goerli!!!!");
-      throw new error("Please change the network to the Goerli!!!!");
-    }
-    if (needSigner) {
-      const signer = web3Provider.getSigner();
-      return signer;
-    }
-    return web3Provider;
-  };
-
-  const connectWallet = async () => {
-    try {
-      console.log("Hello World");
-      await getProviderOrSigner();
-      setWalletConnected(true);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-  useEffect(() => {
-    if (!walletConnected) {
-      web3ModalRef = new Web3Modal({
-        network: "goerli", // For us we will need to changes it to Mumbai.
-        providerOptions: {},
-        disableInjectedProvider: false,
-      });
-      connectWallet();
-    }
-  }, [walletConnected]);
 
   return (
     <div className={`text-white flex justify-between items-center px-10 py-6 `}>
