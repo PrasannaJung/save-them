@@ -12,6 +12,9 @@ module.exports = {
       gridTemplateColumns: {
         responsive: "repeat(auto-fit,minmax(250px,1fr))",
       },
+      screens: {
+        medium: "1000px",
+      },
       colors: {
         primary: "#110835",
         primaryGradientOne: "#9f8ad0",
