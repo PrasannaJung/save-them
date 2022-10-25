@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className=' bg-slate-900 h-24 flex items-center justify-between px-10'>
+    <footer className=' bg-[#292149] h-24 flex items-center justify-between px-10'>
       <div className='flex flex-col items-center'>
         <h1 className='text-2xl'>@Save Them, 2022</h1>
         <span className='text-xs'> All Rights Reserved</span>
