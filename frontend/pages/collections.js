@@ -7,7 +7,14 @@ const CollectionsPage = () => {
     <div className='min-h-[72vh]'>
       <div className='mt-24 p-10 flex gap-10 flex-wrap'>
         {COLLECTION.map(data => {
-          return <SingleCard title={"View"} id={data.id} price={data.price} />;
+          return (
+            <SingleCard
+              key={data.id}
+              title={"View"}
+              id={data.id}
+              price={data.price}
+            />
+          );
         })}
       </div>
     </div>

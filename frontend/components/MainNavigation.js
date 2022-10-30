@@ -2,8 +2,13 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Web3Modal from "web3modal";
 
 const MainNavigation = () => {
+  const [walletConnected, setWalletConnected] = useState(false);
+
+  const web3ModalRef = useRef();
+
   const [navOpen, setNavOpen] = useState(false);
   const [mobileNav, setMobileNav] = useState(true);
 
@@ -24,7 +29,46 @@ const MainNavigation = () => {
     });
   }, []);
 
+  const getProviderOrSigner = async (needSigner = false) => {
+    const provider = await web3ModalRef.current.connect();
+    const web3Provider = new providers.Web3Provider(provider);
+    const { chainId } = await web3Provider.getNetwork();
+    if (chainId !== 5) {
+      window.alert("Change the network to Goerli");
+      throw new Error("Change network to Goerli");
+    }
+
+    if (needSigner) {
+      const signer = web3Provider.getSigner();
+      return signer;
+    }
+    return web3Provider;
+  };
+
+  const connectWallet = async () => {
+    try {
+      await getProviderOrSigner();
+      setWalletConnected(true);
+
+      checkIfAddressInWhitelist();
+      getNumberOfWhitelisted();
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   const router = useRouter();
+
+  useEffect(() => {
+    if (!walletConnected) {
+      web3ModalRef.current = new Web3Modal({
+        network: "goerli",
+        providerOptions: {},
+        disableInjectedProvider: false,
+      });
+      connectWallet();
+    }
+  }, [walletConnected]);
 
   return (
     <div className={`text-white flex justify-between items-center px-10 py-6 `}>
@@ -123,7 +167,10 @@ const MainNavigation = () => {
           </li>
         </ul>
       </nav>
-      <button className='bg-blue-500 rounded-sm py-2 px-3 font-semibold text-base'>
+      <button
+        className='bg-blue-500 rounded-sm py-2 px-3 font-semibold text-base'
+        onClick={connectWallet}
+      >
         Connect Wallet
       </button>
     </div>

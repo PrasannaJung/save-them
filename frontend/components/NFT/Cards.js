@@ -10,7 +10,14 @@ const Cards = () => {
       </h1>
       <div className='medium:mt-24 mt-6 p-10 grid gap-3 grid-cols-responsive place-items-center'>
         {COLLECTION.map(data => {
-          return <SingleCard title={"Mint"} id={data.id} price={data.price} />;
+          return (
+            <SingleCard
+              key={data.id}
+              title={"Mint"}
+              id={data.id}
+              price={data.price}
+            />
+          );
         })}
       </div>
     </div>
