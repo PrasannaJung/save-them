@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Web3Modal from "web3modal";
+import { providers } from "ethers";
 
 const MainNavigation = () => {
   const [walletConnected, setWalletConnected] = useState(false);
@@ -49,9 +50,6 @@ const MainNavigation = () => {
     try {
       await getProviderOrSigner();
       setWalletConnected(true);
-
-      checkIfAddressInWhitelist();
-      getNumberOfWhitelisted();
     } catch (err) {
       console.error(err);
     }
@@ -171,7 +169,7 @@ const MainNavigation = () => {
         className='bg-blue-500 rounded-sm py-2 px-3 font-semibold text-base'
         onClick={connectWallet}
       >
-        Connect Wallet
+        {walletConnected ? "Connected" : "Connect Wallet"}
       </button>
     </div>
   );
