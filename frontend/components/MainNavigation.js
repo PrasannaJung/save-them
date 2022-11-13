@@ -2,20 +2,28 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Web3Modal from "web3modal";
-import { providers } from "ethers";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const MainNavigation = () => {
-  const [walletConnected, setWalletConnected] = useState(false);
-
-  const web3ModalRef = useRef();
-
   const [navOpen, setNavOpen] = useState(false);
   const [mobileNav, setMobileNav] = useState(true);
+  const [scrolledPast, setScrolledPast] = useState(false);
 
   const navToggleHandler = () => {
     setNavOpen(!navOpen);
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const width = window.screen.width;
+      console.log(scrollY);
+      if (scrollY > 40 && width > 600) {
+        setScrolledPast(true);
+      } else {
+        setScrolledPast(false);
+      }
+    });
+  }, []);
 
   useEffect(() => {
     console.log("use effect running");
@@ -30,50 +38,20 @@ const MainNavigation = () => {
     });
   }, []);
 
-  const getProviderOrSigner = async (needSigner = false) => {
-    const provider = await web3ModalRef.current.connect();
-    const web3Provider = new providers.Web3Provider(provider);
-    const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
-      window.alert("Change the network to Goerli");
-      throw new Error("Change network to Goerli");
-    }
-
-    if (needSigner) {
-      const signer = web3Provider.getSigner();
-      return signer;
-    }
-    return web3Provider;
-  };
-
-  const connectWallet = async () => {
-    try {
-      await getProviderOrSigner();
-      setWalletConnected(true);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
   const router = useRouter();
 
-  useEffect(() => {
-    if (!walletConnected) {
-      web3ModalRef.current = new Web3Modal({
-        network: "goerli",
-        providerOptions: {},
-        disableInjectedProvider: false,
-      });
-      connectWallet();
-    }
-  }, [walletConnected]);
-
   return (
-    <div className={`text-white flex justify-between items-center px-10 py-6 `}>
+    <div
+      className={` flex justify-between items-center px-10 py-3 md:py-5 ${
+        scrolledPast
+          ? "fixed top-0 left-0 right-0 bg-slate-100 z-50 text-black shadow-2xl"
+          : ""
+      } transition-all`}
+    >
       {navOpen ? (
         <AiOutlineClose
           onClick={navToggleHandler}
-          className='z-50 sm:block medium:hidden text-2xl cursor-pointer'
+          className='z-50 sm:block medium:hidden text-2xl cursor-pointer text-black'
         />
       ) : (
         <AiOutlineMenu
@@ -85,7 +63,7 @@ const MainNavigation = () => {
         <div
           className={`${
             navOpen ? "left-0" : "-left-1/2"
-          } fixed top-0 h-full w-[50%] bg-[#0e062a] z-20 text-2xl ease-in duration-200`}
+          } fixed top-0 h-full w-[50%] bg-slate-100 z-20 text-2xl ease-in duration-200 text-black `}
         >
           <ul className='flex flex-col py-32 space-y-8 px-10'>
             <li
@@ -132,8 +110,10 @@ const MainNavigation = () => {
         </div>
       )}
 
-      <h1 className='font-bold text-4xl'>SaveThem</h1>
-      <nav className='hidden sm:hidden medium:block lg:block'>
+      <h1 className='font-bold text-3xl md:text-4xl font-robotoSlab'>
+        SaveThem
+      </h1>
+      <nav className={`hidden sm:hidden medium:block lg:block`}>
         <ul className='flex items-center text-[24px] gap-10'>
           <li
             className={`relative transition-all hover:text-gray-300 ${
@@ -182,12 +162,9 @@ const MainNavigation = () => {
           </li>
         </ul>
       </nav>
-      <button
-        className='bg-blue-500 rounded-sm py-2 px-3 font-semibold text-base'
-        onClick={connectWallet}
-      >
-        {walletConnected ? "Connected" : "Connect Wallet"}
-      </button>
+      <div>
+        <ConnectButton />
+      </div>
     </div>
   );
 };

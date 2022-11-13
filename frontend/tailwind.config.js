@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+        robotoSlab: ["Roboto Slab", "serif"],
+      },
       borderRadius: {
         negative: "-8px",
       },

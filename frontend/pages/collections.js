@@ -4,7 +4,7 @@ import SingleCard from "../components/NFT/SingleCard";
 
 const CollectionsPage = () => {
   return (
-    <div className='min-h-[72vh]'>
+    <div>
       <div className='mt-24 p-10 flex gap-10 flex-wrap'>
         {COLLECTION.map(data => {
           return (

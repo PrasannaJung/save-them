@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <div className='min-h-[75vh] text-center'>
+    <div className='text-center'>
       <div className='w-2/3 mx-auto mt-8 text-2xl'>
         <h1 className='font-bold text-3xl mb-3'>About Us</h1>
         <p>
@@ -14,7 +14,7 @@ const AboutPage = () => {
           voluptatibus autem.
         </p>
       </div>
-      <div className='w-2/3 mx-auto mt-16 text-2xl'>
+      <div className='w-2/3 mx-auto mt-16 mb-6 text-2xl'>
         <h1 className='font-bold text-3xl mb-3'>Our Goal</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus

@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Lato", "Roboto Slab";
+  }
+}
 
 body::-webkit-scrollbar {
   width: 8px;

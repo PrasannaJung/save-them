@@ -15,7 +15,7 @@
 }
 
 .heading {
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
   padding: 0;
   padding-top: 2rem;
@@ -45,6 +45,7 @@
 
 .profileContent h2,
 .profileContent p {
+  font-weight: bolder;
   margin: 0;
 }
 
@@ -72,7 +73,7 @@
   font-weight: bold;
   transform: translateX(-165%);
   transition: all 300ms ease;
-  transition-delay: 400ms;
+  transition-delay: 300ms;
 }
 
 .contact {

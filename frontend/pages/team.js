@@ -5,12 +5,25 @@ import styles from "../styles/Team.module.css";
 const TeamPage = () => {
   return (
     <>
-      <h1 className={styles.heading}> Our Team </h1>
-
       <div class={styles.profiles}>
-        <Team name='Prasanna' role='Frontend Developer' />
-        <Team name='Rahul' role='UI/UX Designer' />
-        <Team name='Saurabh' role='Backend Developer' />
+        <Team
+          name='Prasanna'
+          role='Frontend Developer'
+          url={"/pp.jpg"}
+          socialLink={"https://twitter.com/prasannaj_dev"}
+        />
+        <Team
+          name='Rahul'
+          role='UI/UX Designer'
+          url='/photo.jpeg'
+          socialLink={"https://twitter.com/rahul3526"}
+        />
+        <Team
+          name='Saurabh'
+          role='Backend Developer'
+          url='/photo.jpeg'
+          socialLink={"https://twitter.com/saurabh17999"}
+        />
       </div>
     </>
   );

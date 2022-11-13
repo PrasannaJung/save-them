@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className='flex medium:flex-row justify-center items-center h-3/4 flex-col gap-8 medium:mt-0 mt-56'>
+    <div className='flex medium:flex-row justify-center items-center h-3/4 flex-col gap-8 medium:mt-16 mt-64'>
       <div className='text-white flex-1 relative'>
-        <h1 className='text-7xl medium:text-8xl bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-bold leading-none'>
+        <h1 className='text-7xl medium:text-8xl bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-bold leading-none font-robotoSlab'>
           SaveThem
         </h1>
-        <h3 className='text-4xl italic bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent'>
+        <h3 className='text-4xl italic bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-robotoSlab'>
           They deserve better
         </h3>
         <p className='mt-8 text-xl'>
