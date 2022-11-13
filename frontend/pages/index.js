@@ -6,7 +6,7 @@ import Cards from "../components/NFT/Cards";
 export default function Home() {
   return (
     <div className=''>
-      <div className='px-10 h-screen'>
+      <div className='px-10 h-screen scroll-smooth'>
         <Hero />
       </div>
       <div id='nft-section'>

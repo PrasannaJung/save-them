@@ -17,7 +17,7 @@ const Hero = () => {
           ipsum dolor, sit amet consectetur adipisicing
         </p>
         <div className='buttons mt-12 flex gap-5'>
-          <Link href='#nft-section'>
+          <Link href={"#nft-section"}>
             <button className='btn-grad font-bold py-3 px-6 cursor-pointer'>
               Buy Our NFTs
             </button>

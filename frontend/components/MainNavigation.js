@@ -120,6 +120,14 @@ const MainNavigation = () => {
             >
               <Link href='/team'>Team</Link>
             </li>
+            <li
+              onClick={() => {
+                setNavOpen(false);
+              }}
+              className={`hover:text-gray-300 border-b border-gray-300 pb-6  `}
+            >
+              <Link href='/dao'>Dao</Link>
+            </li>
           </ul>
         </div>
       )}
@@ -162,6 +170,15 @@ const MainNavigation = () => {
             } `}
           >
             <Link href='/team'>Team</Link>
+          </li>
+          <li
+            className={`relative transition-all hover:text-gray-300 ${
+              router.pathname === "/dao"
+                ? "before:content-[''] before:absolute before:left-0 before:top-[100%] before:h-[5px] before:w-[50%] before:rounded-tr-full before:rounded-bl-sm before:rounded-tl-sm before:rounded-br-full before:bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo"
+                : ""
+            } `}
+          >
+            <Link href='/dao'>Dao</Link>
           </li>
         </ul>
       </nav>

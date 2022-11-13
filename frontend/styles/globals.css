@@ -6,7 +6,8 @@ body::-webkit-scrollbar {
   width: 8px;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
 }
 
