@@ -11,9 +11,9 @@ const Hero = () => {
   };
 
   return (
-    <div className='flex medium:flex-row justify-center items-center h-3/4 flex-col gap-8 medium:mt-16 mt-64'>
+    <div className='flex medium:flex-row justify-center items-center h-3/4 flex-col-reverse gap-8 medium:mt-16 mt-16'>
       <div className='text-white flex-1 relative'>
-        <h1 className='text-7xl medium:text-8xl bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-bold leading-none font-robotoSlab'>
+        <h1 className='text-6xl medium:text-8xl bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-bold leading-none font-robotoSlab'>
           SaveThem
         </h1>
         <h3 className='text-4xl italic bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-robotoSlab'>
@@ -26,7 +26,7 @@ const Hero = () => {
         </p>
         <div className='buttons mt-12 flex gap-5'>
           <ScrollLink to='nft-section' smooth={true} offset={-160}>
-            <button className='btn-grad font-bold py-3 px-6 cursor-pointer'>
+            <button className='btn-grad font-bold medium:py-3 medium:px-6 px-3 py-3 cursor-pointer'>
               Buy Our NFTs
             </button>
           </ScrollLink>

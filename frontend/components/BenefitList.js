@@ -9,7 +9,7 @@ const BenefitList = () => {
   };
 
   return (
-    <li className='bg-slate-300 text-black my-4 rounded-md overflow-hidden'>
+    <li className='bg-slate-300 text-black my-4 rounded-md overflow-hidden max-w-full'>
       <div className=' flex items-center gap-3 px-6 py-3'>
         <h3 className='text-2xl'>
           Dao members get to submit proposals and vote!

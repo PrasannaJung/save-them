@@ -42,7 +42,7 @@ const MainNavigation = () => {
 
   return (
     <div
-      className={` flex justify-between items-center px-10 py-3 md:py-5 ${
+      className={` flex justify-between items-center px-2 py-3 medium:py-5 medium:px-10 ${
         scrolledPast
           ? "fixed top-0 left-0 right-0 bg-[#f5f1ff] opacity-100 z-50 text-black shadow-2xl"
           : ""
@@ -110,7 +110,7 @@ const MainNavigation = () => {
         </div>
       )}
 
-      <h1 className='font-bold text-3xl md:text-4xl font-robotoSlab'>
+      <h1 className='font-bold text-2xl md:text-4xl font-robotoSlab'>
         SaveThem
       </h1>
       <nav className={`hidden sm:hidden medium:block lg:block`}>
