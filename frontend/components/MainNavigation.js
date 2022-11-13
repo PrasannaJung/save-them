@@ -17,7 +17,7 @@ const MainNavigation = () => {
     window.addEventListener("scroll", () => {
       const width = window.screen.width;
       console.log(scrollY);
-      if (scrollY > 40 && width > 600) {
+      if (scrollY > 70 && width > 600) {
         setScrolledPast(true);
       } else {
         setScrolledPast(false);
@@ -44,7 +44,7 @@ const MainNavigation = () => {
     <div
       className={` flex justify-between items-center px-10 py-3 md:py-5 ${
         scrolledPast
-          ? "fixed top-0 left-0 right-0 bg-slate-100 z-50 text-black shadow-2xl"
+          ? "fixed top-0 left-0 right-0 bg-[#f5f1ff] opacity-100 z-50 text-black shadow-2xl"
           : ""
       } transition-all`}
     >

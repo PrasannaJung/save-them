@@ -1,7 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
+  const router = useRouter();
+
+  const pagePushHandler = () => {
+    router.push("/about");
+  };
+
   return (
     <div className='flex medium:flex-row justify-center items-center h-3/4 flex-col gap-8 medium:mt-16 mt-64'>
       <div className='text-white flex-1 relative'>
@@ -17,12 +25,15 @@ const Hero = () => {
           ipsum dolor, sit amet consectetur adipisicing
         </p>
         <div className='buttons mt-12 flex gap-5'>
-          <Link href={"#nft-section"}>
+          <ScrollLink to='nft-section' smooth={true} offset={-160}>
             <button className='btn-grad font-bold py-3 px-6 cursor-pointer'>
               Buy Our NFTs
             </button>
-          </Link>
-          <button className='borderGrad font-bold py-2 px-3 hover:underline cursor-pointer'>
+          </ScrollLink>
+          <button
+            className='borderGrad font-bold py-2 px-3 hover:underline cursor-pointer'
+            onClick={pagePushHandler}
+          >
             More on us!
           </button>
         </div>

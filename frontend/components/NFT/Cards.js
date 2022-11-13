@@ -8,7 +8,7 @@ const Cards = () => {
       <h1 className='text-center text-5xl uppercase mt-16 medium:mt-0'>
         Our NFTs
       </h1>
-      <div className='medium:mt-24 mt-6 p-10 grid gap-3 grid-cols-responsive place-items-center'>
+      <div className='medium:mt-16 mt-6 p-10 grid gap-3 grid-cols-responsive place-items-center'>
         {COLLECTION.map(data => {
           return (
             <SingleCard
