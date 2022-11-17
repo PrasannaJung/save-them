@@ -1,31 +1,20 @@
-# Welcome To Career Expo
+# Welcome To Save Them
 
 
-## Idea behind Career Expo
+## Idea behind Save Them
 
-We heard that people Web3 people are using Centralize website for Getting jobs.So , Rahul, Passan, and I(Ritik) came up with the idea Of **Career Expo**.
-
-
-
-## What is Career Expo?
+The idea behind the project is to raise funds for the Dogs to help them with hospitality, food, and shelter.
 
 
-Let me introduce you all to the fantastic website called Career Expo. Usually, what we do we apply for jobs on the Web2 website which I don't like To be honest, we all decided to create our own website for job boarding on Web3. At Carrer Expo, both company and the applicant can post their job requirements.  
+## What is Save Them?
 
+Save them is a platform where people can buy Nfts through which we raise funds for dogs. All the Nfts holders get the right to vote on which all the funds will be donated.
 
 ## What it Offer
 
 Job Board is a Decentralize platform for Job Boarding. 
 
-  **-** Posting Job.
-  
-  **-** Connects with other people of your same Niche.
-  
-  **-** Providing Intership.
-
-## How to post a job in Carrer Expo
-
-If you visit our Website there is Two option out there. One is for Company and other is for Applicant. If you want to post a job for Company Click on Company Tag Connect Your metamask account and Fill Up the form. If you are an applicant you can click on the applicant tag and fill up you form and Upload Your CV. So other companies can communicate with you of Future communication.
+  **-** It offer Nfts holders to vote.
 
 ## Technologies We Used
 **- Polygon**- 
@@ -46,22 +35,18 @@ If you visit our Website there is Two option out there. One is for Company and o
 
 ## Hurdles We faced during this project
 
-**-** This was a roller-coaster journey for us. we faced a lot of back-breaking problems.The major task for us is of **Bounties** we never worked for bounties but this time we are doing it. We targeted 3-4 bounties in a single shot and we manage to figure out how to implement it.
+**-** This was a roller-coaster journey for us. we faced a lot of back-breaking problems.
 
 **-** One of the problems was **Api Fetching** We try to do it by reading Documentation and testing the other function.
 
-**-** While we targeting there were a Few technologies we never heard of we communicate with other people and read the docs to Figure it out.
+**-** One of the major issue was to Better Ui it took lots of research.
 
-**-** In the Smart contract also we face difficulties because it was not working the way we want. After asking help from few people we figure out the issue and fixed it.
+**-** In the Smart contract also we face difficulties because it was not working the way we want. At last we figure out the issue and fixed it.
 
 **-** While working with the front end we faced **Hydration** error in Next.js. Which was there till Last day.
 
-
 ## What We Learned
 
-**-** The Use of File Coin. How to integrate File Coin, Store data in file Coin, and Retrieve data from file coin.
+**-** The Use of IPFS. How to store data on IPFS.
 
 **-** This was the First time we integrated the Rainbow kit into our Project. Nobody has perfect knowledge about the rainbow kit Still we Figure out Some or other way to do it.
-
-**-** We learned how to deploy the project on **valist**. To be honest it was quite a difficult task for us But not impossible.
-
