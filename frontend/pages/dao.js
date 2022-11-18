@@ -204,12 +204,12 @@ const DaoPage = () => {
         >
           Create Proposal
         </button>
-        <button
+        {/* <button
           className="font-bold bg-slate-200 text-black px-3 py-2 uppercase rounded-lg hover:-translate-y-1 active:translate-y-0 transition-transform ml-2"
           onClick={() => setSelectedTab('View Proposals')}
         >
           View Proposal
-        </button>
+        </button> */}
       </div>
     );
   };
