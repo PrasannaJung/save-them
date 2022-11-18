@@ -253,7 +253,7 @@ const DaoPage = () => {
       return (
         <div className='text-xl'>
           {" "}
-          You don't own any CryptoDevs NFTs. <br />
+          You don't own any Pawsitive NFTs. <br />
           <b>You cannot create or vote on proposals.</b>
         </div>
       );
@@ -370,16 +370,16 @@ const DaoPage = () => {
           {renderTabs()}
         </div>
       </section>
-      {/* <section className="flex items-center justify-center flex-col mt-24">
-        <h2 className=" font-bold text-3xl">Benefits of Joining the Dao</h2>
-        <div className="my-10">
+      <section className='flex items-center justify-center flex-col mt-24'>
+        <h2 className=' font-bold text-3xl'>Benefits of Joining the Dao</h2>
+        <div className='my-10'>
           <ul>
             <BenefitList />
             <BenefitList />
             <BenefitList />
           </ul>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 };
