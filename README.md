@@ -1,14 +1,14 @@
-# Welcome To Save Them
+# Welcome To Pawsitive
 
 
-## Idea behind Save Them
+## Idea behind Pawsitive
 
 The idea behind the project is to raise funds for the Dogs to help them with hospitality, food, and shelter.
 
 
-## What is Save Them?
+## What is Pawsitive?
 
-Save them is a platform where people can buy Nfts through which we raise funds for dogs. All the Nfts holders get the right to vote on which all the funds will be donated.
+Pawsitive is a platform where people can buy Nfts through which we raise funds for dogs. All the Nfts holders get the right to vote on which all the funds will be donated.
 
 ## What it Offer
 
