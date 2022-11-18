@@ -1,184 +1,5 @@
-// export const WHITELIST_CONTRACT_ADDRESS =
-//   '0x477cF3f0bc05283C2F04f96800a9f266DC921eE7';
-// export const WHITELIST_CONTRACT_ABI = [
-//   {
-//     inputs: [
-//       {
-//         internalType: 'uint8',
-//         name: '_maxWhitelistedAddresses',
-//         type: 'uint8',
-//       },
-//     ],
-//     stateMutability: 'nonpayable',
-//     type: 'constructor',
-//   },
-//   {
-//     anonymous: false,
-//     inputs: [
-//       {
-//         indexed: true,
-//         internalType: 'address',
-//         name: 'previousOwner',
-//         type: 'address',
-//       },
-//       {
-//         indexed: true,
-//         internalType: 'address',
-//         name: 'newOwner',
-//         type: 'address',
-//       },
-//     ],
-//     name: 'OwnershipTransferred',
-//     type: 'event',
-//   },
-//   {
-//     inputs: [],
-//     name: '_paused',
-//     outputs: [
-//       {
-//         internalType: 'bool',
-//         name: '',
-//         type: 'bool',
-//       },
-//     ],
-//     stateMutability: 'view',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [],
-//     name: 'addAddressToWhitelist',
-//     outputs: [],
-//     stateMutability: 'nonpayable',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [],
-//     name: 'maxWhitelistedAddresses',
-//     outputs: [
-//       {
-//         internalType: 'uint8',
-//         name: '',
-//         type: 'uint8',
-//       },
-//     ],
-//     stateMutability: 'view',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [],
-//     name: 'numAddressesWhitelisted',
-//     outputs: [
-//       {
-//         internalType: 'uint8',
-//         name: '',
-//         type: 'uint8',
-//       },
-//     ],
-//     stateMutability: 'view',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [],
-//     name: 'owner',
-//     outputs: [
-//       {
-//         internalType: 'address',
-//         name: '',
-//         type: 'address',
-//       },
-//     ],
-//     stateMutability: 'view',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [],
-//     name: 'renounceOwnership',
-//     outputs: [],
-//     stateMutability: 'nonpayable',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [
-//       {
-//         internalType: 'bool',
-//         name: 'val',
-//         type: 'bool',
-//       },
-//     ],
-//     name: 'setPaused',
-//     outputs: [],
-//     stateMutability: 'nonpayable',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [],
-//     name: 'startWhitelisting',
-//     outputs: [],
-//     stateMutability: 'nonpayable',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [
-//       {
-//         internalType: 'address',
-//         name: 'newOwner',
-//         type: 'address',
-//       },
-//     ],
-//     name: 'transferOwnership',
-//     outputs: [],
-//     stateMutability: 'nonpayable',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [
-//       {
-//         internalType: 'address',
-//         name: '',
-//         type: 'address',
-//       },
-//     ],
-//     name: 'whitelistedAddresses',
-//     outputs: [
-//       {
-//         internalType: 'bool',
-//         name: '',
-//         type: 'bool',
-//       },
-//     ],
-//     stateMutability: 'view',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [],
-//     name: 'whitelistingEnded',
-//     outputs: [
-//       {
-//         internalType: 'uint256',
-//         name: '',
-//         type: 'uint256',
-//       },
-//     ],
-//     stateMutability: 'view',
-//     type: 'function',
-//   },
-//   {
-//     inputs: [],
-//     name: 'whitelistingStarted',
-//     outputs: [
-//       {
-//         internalType: 'bool',
-//         name: '',
-//         type: 'bool',
-//       },
-//     ],
-//     stateMutability: 'view',
-//     type: 'function',
-//   },
-// ];
-
 export const NFT_CONTRACT_ADDRESS =
-  '0xe7bdE79Abc3C045A9b11E58f5d3617FB7E2DdacA';
+  '0x96c88de4A4410BC09dEf9c5E82b4bF2106A09019';
 export const NFT_CONTRACT_ABI = [
   {
     inputs: [
@@ -750,7 +571,7 @@ export const NFT_CONTRACT_ABI = [
 ];
 
 export const DAO_CONTRACT_ADDRESS =
-  '0x3F53b4309f7E2Ad8539EB2B6d0e02C04e703fC4E';
+  '0xE156E60692468813fc8EFe9E431f0a4F387d3aa1';
 export const DAO_CONTRACT_ABI = [
   {
     inputs: [
@@ -800,7 +621,7 @@ export const DAO_CONTRACT_ABI = [
     inputs: [
       {
         internalType: 'address',
-        name: '_cryptoDevsNFT',
+        name: '_pawsitiveNFT',
         type: 'address',
       },
     ],
@@ -851,7 +672,7 @@ export const DAO_CONTRACT_ABI = [
         type: 'uint256',
       },
       {
-        internalType: 'enum SSPDao.Vote',
+        internalType: 'enum PawsitiveDAO.Vote',
         name: 'vote',
         type: 'uint8',
       },
