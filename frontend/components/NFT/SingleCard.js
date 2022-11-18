@@ -4,7 +4,7 @@ const SingleCard = props => {
   return (
     <div className=' w-64 bg-white bg-opacity-10'>
       <img
-        src={`/dog-images/${props.id}.jpg`}
+        src={`/dog-images/${props.id}.png`}
         className='w-full h-64 object-cover'
         alt='dog image'
       />

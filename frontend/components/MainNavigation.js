@@ -48,10 +48,15 @@ const MainNavigation = () => {
           : ""
       } transition-all`}
     >
+      {/*
+        -------------------------------------
+        ------ MOBILE NAVIGATION LINKS ------
+        -------------------------------------
+       */}
       {navOpen ? (
         <AiOutlineClose
           onClick={navToggleHandler}
-          className='z-50 sm:block medium:hidden text-2xl cursor-pointer text-black'
+          className='z-50 sm:block medium:hidden text-2xl cursor-pointer text-black fixed'
         />
       ) : (
         <AiOutlineMenu
@@ -113,6 +118,11 @@ const MainNavigation = () => {
       <h1 className='font-bold text-2xl md:text-4xl font-robotoSlab'>
         SaveThem
       </h1>
+      {/*
+        ------------------------------
+        ------ LARGE NAVIGATION LINKS ------
+        ------------------------------
+       */}
       <nav className={`hidden sm:hidden medium:block lg:block`}>
         <ul className='flex items-center text-[24px] gap-10'>
           <li

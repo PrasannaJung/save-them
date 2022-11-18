@@ -19,6 +19,9 @@ const DaoPage = () => {
           <button className='font-bold bg-slate-200 text-black px-3 py-2 uppercase rounded-lg hover:-translate-y-1 active:translate-y-0 transition-transform'>
             Join our Dao
           </button>
+          <button className='font-bold bg-slate-200 text-black px-3 py-2 uppercase rounded-lg hover:-translate-y-1 active:translate-y-0 transition-transform ml-4'>
+            View Proposal
+          </button>
         </div>
       </section>
       <section className='flex items-center justify-center flex-col mt-24'>
