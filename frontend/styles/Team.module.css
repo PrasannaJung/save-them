@@ -47,6 +47,11 @@
 .profileContent p {
   font-weight: bolder;
   margin: 0;
+  text-align: center;
+}
+
+.profileContent h2 {
+  font-size: 1.4rem;
 }
 
 .profileContent {
@@ -88,7 +93,7 @@
 .profile:hover .profileContent {
   /* position: static; */
   /* transform: translate(0, 10%); */
-  margin-top: 130px;
+  margin-top: 110px;
   z-index: 1;
 }
 

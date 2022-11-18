@@ -116,7 +116,7 @@ const MainNavigation = () => {
       )}
 
       <h1 className='font-bold text-2xl md:text-4xl font-robotoSlab'>
-        SaveThem
+        Pawsitive
       </h1>
       {/*
         ------------------------------
