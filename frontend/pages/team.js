@@ -28,7 +28,7 @@ const TeamPage = () => {
           name='Neha'
           role='NFT Artist'
           url='/photo.jpeg'
-          socialLink={"https://twitter.com/saurabh17999"}
+          socialLink={"https://twitter.com/nehathecoder"}
         />
       </div>
     </>
