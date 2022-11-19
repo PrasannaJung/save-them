@@ -14,7 +14,7 @@ const Hero = () => {
     <div className='flex medium:flex-row justify-center items-center h-3/4 flex-col-reverse gap-8 medium:mt-16 mt-16'>
       <div className='text-white flex-1 relative'>
         <h1 className='text-6xl medium:text-8xl bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-bold leading-none font-robotoSlab'>
-          Pawsitive
+          SaveThem
         </h1>
         <h3 className='text-4xl italic bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-robotoSlab'>
           They deserve better
