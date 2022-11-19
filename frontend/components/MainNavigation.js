@@ -16,7 +16,6 @@ const MainNavigation = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const width = window.screen.width;
-      console.log(scrollY);
       if (scrollY > 70 && width > 600) {
         setScrolledPast(true);
       } else {
@@ -26,10 +25,8 @@ const MainNavigation = () => {
   }, []);
 
   useEffect(() => {
-    console.log("use effect running");
     window.addEventListener("resize", () => {
       if (window.innerWidth > 1000) {
-        console.log("MEDIUM");
         setMobileNav(false);
         setNavOpen(false);
       } else {
@@ -93,7 +90,7 @@ const MainNavigation = () => {
               }}
               className={`hover:text-gray-300 border-b border-gray-300 pb-6  `}
             >
-              <Link href='/collections'>Collections</Link>
+              <Link href='/collections'>All Collections</Link>
             </li>
             <li
               onClick={() => {
@@ -150,7 +147,7 @@ const MainNavigation = () => {
                 : ""
             } `}
           >
-            <Link href='/collections'>My Collections</Link>
+            <Link href='/collections'>Our Collections</Link>
           </li>
           <li
             className={`relative transition-all hover:text-gray-300 ${

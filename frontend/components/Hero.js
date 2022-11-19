@@ -14,13 +14,19 @@ const Hero = () => {
     <div className='flex medium:flex-row justify-center items-center h-3/4 flex-col-reverse gap-8 medium:mt-16 mt-16'>
       <div className='text-white flex-1 relative'>
         <h1 className='text-6xl medium:text-8xl bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-bold leading-none font-robotoSlab'>
-          SaveThem
+          Pawsitive
         </h1>
         <h3 className='text-4xl italic bg-gradient-to-tr from-primaryGradientOne to-primaryGradientTwo bg-clip-text text-transparent font-robotoSlab'>
           They deserve better
         </h3>
         <p className='mt-8 text-xl'>
-         India is the rabies capital of the world with more than 70% of the world cases coming from here. The idea behind the project is to raise funds for the Dogs to help them with hospitality, food, and shelter and vasectomy. To cope with with the rising population of the stray dogs and stop the killing of these dogs with cruelty and to rectify the mistakes and move ahead towards the future and controlling the spread of the disease.
+          India is the rabies capital of the world with more than 70% of the
+          world cases coming from here. The idea behind the project is to raise
+          funds for the Dogs to help them with hospitality, food, and shelter
+          and vasectomy. To cope with with the rising population of the stray
+          dogs and stop the killing of these dogs with cruelty and to rectify
+          the mistakes and move ahead towards the future and controlling the
+          spread of the disease.
         </p>
         <div className='buttons mt-12 flex gap-5'>
           <ScrollLink to='nft-section' smooth={true} offset={-160}>
