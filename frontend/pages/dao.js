@@ -360,7 +360,7 @@ const DaoPage = () => {
           </h2>
           <p className="text-xl">
            This DAO takes the decision on how to vote for the proposal on how to manage different tasks . It could be about Vasectomy of dogs
-           to stop the spread of population.Or to provide the dog owners with education or to close the illegal pet shops from operation. 
+           to stop the spread of population or to provide the dog owners with education or to close the illegal pet shops from operation. 
           </p>
         </div>
         <div className="mt-10">
