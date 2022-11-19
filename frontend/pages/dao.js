@@ -359,9 +359,8 @@ const DaoPage = () => {
             Join the Dao to help animals charity
           </h2>
           <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            rerum officia perferendis illo odit minima est amet aperiam
-            consequatur error.
+           This DAO takes the decision on how to vote for the proposal on how to manage different tasks . It could be about Vasectomy of dogs
+           to stop the spread of population.Or to provide the dog owners with education or to close the illegal pet shops from operation. 
           </p>
         </div>
         <div className="mt-10">
