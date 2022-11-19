@@ -24,7 +24,7 @@ It offers a solution to the problem faced by people in the streets where dogs be
  <a href="https://polygon.technology/"><img src="https://user-images.githubusercontent.com/76695769/191501624-226d10fd-6108-4c80-86ff-88b768ea262b.jpg"></a>
 
 **- Chainlink**- 
-  "Thinking
+  We plan to use it for displaying price of matic in dollars . by fetching the price through chainlink data feed. We fetched the smart contract on a separate repo but couldn't get it to integrate in our project in the last moment. 
   
   <a href="https://chain.link/"><img src="https://user-images.githubusercontent.com/76695769/191504080-068d28d7-1ce1-47ce-8252-a5a40b6b92a5.png"></a>
 
@@ -36,6 +36,8 @@ It offers a solution to the problem faced by people in the streets where dogs be
 ## Hurdles We faced during this project
 
 **-** This was a roller-coaster journey for us. we faced a lot of back-breaking problems.
+
+**-** Despite able to feed in conversion of matic to display price in dollars separately in another repo using chainlink contract for price feeds during the last minute integration we were not able to integrate it in the main project. and had to submit anyways.
 
 **-** One of the problems was getting the artist for our project . She had to be skilled enough to take the initiative.
 
