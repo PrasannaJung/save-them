@@ -20,9 +20,7 @@ const Hero = () => {
           They deserve better
         </h3>
         <p className='mt-8 text-xl'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, officia
-          odit iusto alias dolores voluptatem. Lorem, ipsum dolor sit Lorem
-          ipsum dolor, sit amet consectetur adipisicing
+         India is the rabies capital of the world with more than 70% of the world cases coming from here. The idea behind the project is to raise funds for the Dogs to help them with hospitality, food, and shelter and vasectomy. To cope with with the rising population of the stray dogs and stop the killing of these dogs with cruelty and to rectify the mistakes and move ahead towards the future and controlling the spread of the disease.
         </p>
         <div className='buttons mt-12 flex gap-5'>
           <ScrollLink to='nft-section' smooth={true} offset={-160}>
