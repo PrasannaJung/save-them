@@ -112,9 +112,9 @@ const MainNavigation = () => {
         </div>
       )}
 
-      <h1 className='font-bold text-2xl md:text-4xl font-robotoSlab'>
-        Pawsitive
-      </h1>
+      <div className='font-bold text-2xl md:text-4xl font-robotoSlab w-56 rounded-lg overflow-hidden'>
+        <img className='max-w-full' src='/logo.jpeg' alt='' />
+      </div>
       {/*
         ------------------------------
         ------ LARGE NAVIGATION LINKS ------
